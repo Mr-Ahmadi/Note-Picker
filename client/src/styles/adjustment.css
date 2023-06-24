@@ -1,0 +1,43 @@
+.overflow-auto {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+}
+.overflow-auto::-webkit-scrollbar {
+    display: none; 
+}
+audio { 
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.bg-gray{
+    background-color: rgb(15, 15, 15)!important;
+}
+.h-70 {
+    height: 70%!important;
+}
+.h-30 {
+    height: 30%!important;
+}
+.link-primary {
+    cursor: pointer;
+}
+.link-danger {
+    cursor: pointer;
+}
+input[type=password], input[type=text], input[type=file] {
+    background-color: rgb(229,229,229);
+    border-bottom-width: 2px;
+    border-width: 0!important;
+}
+.btn-close {
+    background-color: rgb(241,76,76)!important;
+}
+.modal-content {
+    background-color: rgb(60,60,60)!important;
+    color: rgb(229,229,229)!important;
+}
+.modal-content div:not(.spinner-border){
+    border-color: rgb(133,133,133)!important;
+}
