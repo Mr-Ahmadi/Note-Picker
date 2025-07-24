@@ -13,12 +13,12 @@ const NoteViewModal = ({show, onHide, note, url, fileExtention}) => {
     return (
         <Modal show={show} onHide={resetModel}>
             <Modal.Header closeButton> 
-            <Modal.Title>{note.title}</Modal.Title>
+            <Modal.Title className='text-start text-truncate'>{note.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body >
-                <div className='when-resize'>
+                {note.description && <div className='when-resize'>
                     <label className='h6'>Description:</label> {note.description}
-                </div>
+                </div>}
                 <div className='text-center'>
                     {fileExtention === 'mp4' && <div className='div-canvas'><canvas></canvas></div>}
                 </div>
@@ -32,5 +32,4 @@ const NoteViewModal = ({show, onHide, note, url, fileExtention}) => {
         </Modal>
     )
 }
-
 export default NoteViewModal

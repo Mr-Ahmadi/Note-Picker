@@ -10,8 +10,8 @@ const userValidation = (duration, setrequesting) => {
     const description = selector('#description').value
     let note = {title, selectedTime, description}
     selector('#status').classList = 'text-danger'
-    if(!title || !description) {
-        selector('#status').innerHTML = '- All fields are required'
+    if(!title) {
+        selector('#status').innerHTML = '- Fill required fields'
         setrequesting(false)
         return false
     } else if(((duration.hour * 3600) + (duration.min * 60) 
